@@ -1,0 +1,60 @@
+@import url('../vars');
+
+// The basic button
+.button {
+
+  padding: 12px;
+  border-radius: 5px;
+  text-align: center;
+
+  font-family: @font-titilium-web;
+}
+
+// Option for displaying a button as a block
+.button-block {
+
+  display: block;
+}
+
+// A wonderful blue standard button with smoke font and white hover
+.button-standard {
+
+  background-color: @color-blue;
+  color: @color-smoke;
+  transition: 0.4s;
+}
+
+.button-standard:hover {
+
+  background-color: @color-smoke;
+  color: @color-blue;
+  transition: 0.4s;
+}
+
+// Orange contrasted button with white hover for more contrast in smoke areas
+.button-orange {
+
+  background-color: @color-orange;
+  color: @color-smoke;
+  transition: 0.4s;
+}
+
+.button-orange:hover {
+
+  background-color: @color-white;
+  color: @color-blue;
+  transition: 0.4s;
+}
+
+// Sketchy green button with a smooth hover effect
+.button-green {
+  background-color: @color-green-grass;
+  color: @color-white;
+  transition: 0.4s;
+}
+
+.button-green:hover {
+  background-color: @color-green-grass-wet;
+  color: @color-white;
+  transition: 0.4s;
+}
