@@ -32,6 +32,34 @@
       gtag('config', 'UA-131487381-3');
     </script>
 
+    <!-- Cookie Consent -->
+    <link rel="stylesheet" type="text/css"
+          href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#edeff5",
+              "text": "#838391"
+            },
+            "button": {
+              "background": "#4b81e8"
+            }
+          },
+          "theme": "edgeless",
+          "position": "bottom-right",
+          "content": {
+            "message": "Diese Webseite benutzt Cookies um die Benutzererfahrung zu verbessern.",
+            "dismiss": "Verstanden",
+            "link": "Mehr erfahren",
+            "href": "https://www.felix-klauke.de/legal/privacy"
+          }
+        })
+      });
+    </script>
+
   </head>
   <body>
     {% block body %}{% endblock %}
