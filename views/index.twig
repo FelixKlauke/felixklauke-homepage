@@ -1,6 +1,99 @@
 {% extends 'layout.twig' %}
 
 {% block content %}
-  <h1>{{title}}</h1>
-  <p>Welcome to {{title}}</p>
+  <section id="whoami">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <h3>Wer bin ich?</h3>
+
+          <p>Ich bin Felix, 20 Jahre alt und komme aus dem schönen Sauerland. Meine Hobbies sind Lesen, Schach, Tischtennis und Informatik.</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h3>Was mache ich?</h3>
+
+          <p>Derzeit bin ich dualer Student und mache mich nebenberuflich selbstständig. Ich beschäftige mich viel mit IT Themen. </p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h3>Was arbeite ich?</h3>
+
+          <p>Ich mache ein duales Studium mit einer Ausbildung zum Fachinformatiker Systemintegration bei der itemis AG und einem Studium zu Softwaretechnik an der FH Dortmund.</p>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <h3>Was ist sonst noch so wichtig?</h3>
+
+          <p>Ich arbeite beharrlich daran den Weltfrieden zu privatisieren und interessiere mich für politische und wirtschaftliche Themen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stats">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12">
+          <i class="fa fa-5x fa-graduation-cap"></i>
+
+          <p>7+ Jahre Erfahrung in Software & IT</p>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <i class="fa fa-5x fa-building"></i>
+
+          <p>Junger Gründer seit 2018</p>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <i class="fa fa-5x fa-coffee"></i>
+
+          <p>1337+ Tassen Kaffee</p>
+        </div>
+
+        <div class="col-md-3 col-sm-12">
+          <i class="fa fa-5x fa-calendar"></i>
+
+          <p>As good as near over 9000 days wasted on earth</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8 col-sm-12">
+          <h2>Projekte</h2>
+
+          <p>Viele meiner Freizeit Projekte finden sich auf meinem <a
+                    href="https://github.com/FelixKlauke">GitHub</a> Account wieder. Wnan immer ich Zeit habe
+            unterstütze ich gerne Projekte in den Bereichen Hosting, Cloud und Gaming.</p>
+        </div>
+
+        <div class="col-md-4 col-sm-12">
+          <img width="328" src="/images/projekte.webp" alt="Projects">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="service">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4 col-sm-12">
+          <img src="/images/services.webp" alt="Services">
+        </div>
+        <div class="col-md-8 col-sm-12">
+          <h2>Services</h2>
+
+          <p>Über <a href="https://www.klauke-enterprises.de">meine Firma</a> biete ich seit 2018 zahlreiche
+            Dienstleistungen und Produkte in den Bereichen
+            Managed IT, Hosting, Software & Consulting an. Solltest du Interesse daran haben wirf gerne einmal
+            einen Blick auf die Angebote oder kontaktiere mich direkt.</p>
+
+          <p>Am besten erreichst du mich per E-Mail an <a
+                    href="mailto:info@felix-klauke.de">info@felix-klauke.de</a>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 {% endblock %}

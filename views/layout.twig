@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
+<head>
 
     <!-- Title -->
     <title>Felix Klauke</title>
 
     <!-- Stylesheet -->
-    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css' />
+    <link rel='stylesheet' type="text/css" href='/stylesheets/style.css'/>
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,8 +17,10 @@
     <!-- Relevant meta tags -->
     <meta name="author" content="Felix Klauke">
     <meta name="copyright" content="Felix Klauke">
-    <meta name="description" content="Ich bin ein 20 Jahrer alter dualer Student und dazu selbstständig als IT Dienstleister in den Bereichen Managed IT, Hosting, Software und Consulting.">
-    <meta name="keywords" content="Felix, Klauke, Felix Klauke, Klauke Enterprises, Server, Web, Webdesign, Hosting, Software, Consulting, Person, Medium">
+    <meta name="description"
+          content="Ich bin ein 20 Jahrer alter dualer Student und dazu selbstständig als IT Dienstleister in den Bereichen Managed IT, Hosting, Software und Consulting.">
+    <meta name="keywords"
+          content="Felix, Klauke, Felix Klauke, Klauke Enterprises, Server, Web, Webdesign, Hosting, Software, Consulting, Person, Medium">
 
     <!-- Twitter card -->
     <meta name="twitter:card" content="summary">
@@ -27,74 +29,85 @@
 
     <!-- JSON LD -->
     <script type="application/ld+json">
-      {
-        "@context": "http://schema.org/",
-        "@type": "Person",
-        "name": "Felix Klauke",
-        "url": "https://www.felix-klauke.de",
-        "image": "https://avatars1.githubusercontent.com/u/16369612?s=460&v=4",
-        "jobTitle": "Geschäftsinhaber",
-        "worksFor": {
-          "@type": "Organization",
-          "name": "Klauke Enterprises"
+        {
+            "@context": "http://schema.org/",
+            "@type": "Person",
+            "name": "Felix Klauke",
+            "url": "https://www.felix-klauke.de",
+            "image": "https://avatars1.githubusercontent.com/u/16369612?s=460&v=4",
+            "jobTitle": "Geschäftsinhaber",
+            "worksFor": {
+                "@type": "Organization",
+                "name": "Klauke Enterprises"
+            }
         }
-      }
     </script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script type="text/javascript">
-      var gaProperty = 'UA-131487381-3';
-      var disableStr = 'ga-disable-' + gaProperty;
-      if (document.cookie.indexOf(disableStr + '=true') > -1) {
-        window[disableStr] = true;
-      }
+        var gaProperty = 'UA-131487381-3';
+        var disableStr = 'ga-disable-' + gaProperty;
+        if (document.cookie.indexOf(disableStr + '=true') > -1) {
+            window[disableStr] = true;
+        }
 
-      function gaOptout() {
-        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
-        window[disableStr] = true;
-        alert('Das Tracking durch Google Analytics wurde in Ihrem Browser für diese Website deaktiviert.');
-      }
+        function gaOptout() {
+            document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+            window[disableStr] = true;
+            alert('Das Tracking durch Google Analytics wurde in Ihrem Browser für diese Website deaktiviert.');
+        }
     </script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131487381-3"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'UA-131487381-3');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131487381-3');
     </script>
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
 
     <!-- Cookie Consent -->
     <link rel="stylesheet" type="text/css"
           href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"/>
     <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
     <script>
-      window.addEventListener("load", function () {
-        window.cookieconsent.initialise({
-          "palette": {
-            "popup": {
-              "background": "#edeff5",
-              "text": "#838391"
-            },
-            "button": {
-              "background": "#4b81e8"
-            }
-          },
-          "theme": "edgeless",
-          "position": "bottom-right",
-          "content": {
-            "message": "Diese Webseite benutzt Cookies um die Benutzererfahrung zu verbessern.",
-            "dismiss": "Verstanden",
-            "link": "Mehr erfahren",
-            "href": "https://www.felix-klauke.de/legal/privacy"
-          }
-        })
-      });
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#edeff5",
+                        "text": "#838391"
+                    },
+                    "button": {
+                        "background": "#4b81e8"
+                    }
+                },
+                "theme": "edgeless",
+                "position": "bottom-right",
+                "content": {
+                    "message": "Diese Webseite benutzt Cookies um die Benutzererfahrung zu verbessern.",
+                    "dismiss": "Verstanden",
+                    "link": "Mehr erfahren",
+                    "href": "https://www.felix-klauke.de/legal/privacy"
+                }
+            })
+        });
     </script>
 
-  </head>
-  <body>
-    {% block content %}{% endblock %}
-  </body>
+</head>
+<body>
+{% include 'include/header.twig' %}
+
+{% block content %}{% endblock %}
+
+{% include 'include/footer.twig' %}
+</body>
 </html>
