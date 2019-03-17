@@ -14,7 +14,11 @@ COPY package.json /opt/app
 RUN npm install
 
 # Copy files
-COPY . /opt/app
+COPY app.js /opt/app
+COPY public /opt/app/public
+COPY routes /opt/app/routes
+COPY views /opt/app/views
+COPY bin /opt/app/bin
 
 # Build step
 RUN npm run build
