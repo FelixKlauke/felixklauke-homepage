@@ -51,29 +51,46 @@ section {
 
 header {
 
-  background: url("/images/himmel.webp") center center;
-  background-size: cover;
-  height: 320px;
-  text-align: center;
+  .header-bar {
 
+    p {
+      margin-right: 14px;
+    }
 
-  @media screen and (max-width: 844px) {
-    height: 450px;
+    background-color: @color-smoke;
+    padding: 5px 0;
+
+    .meeting-link {
+      text-align: right;
+      margin: 10px 0 10px auto;
+    }
   }
 
-  @media screen and (max-width: 465px) {
-    height: 520px;
-  }
+  .header-banner {
+    background: url("/images/himmel.webp") center center;
+    background-size: cover;
+    height: 320px;
+    text-align: center;
 
-  img {
-    border-radius: 50%;
-    height: 260px;
-    margin: 30px auto;
-  }
 
-  h1 {
-    display: block;
-    font-size: 55px;
+    @media screen and (max-width: 844px) {
+      height: 450px;
+    }
+
+    @media screen and (max-width: 465px) {
+      height: 520px;
+    }
+
+    img {
+      border-radius: 50%;
+      height: 260px;
+      margin: 30px auto;
+    }
+
+    h1 {
+      display: block;
+      font-size: 55px;
+    }
   }
 }
 
