@@ -161,6 +161,18 @@ footer {
 #service {
 
   background-color: @color-smoke;
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 844px) {
+
+    img {
+      width: 70%;
+      margin: 20px;
+    }
+  }
 }
 
 section {
@@ -193,5 +205,24 @@ section {
     width: 80%;
     margin: 0 auto;
     display: block;
+
+    iframe.hs-form-iframe {
+      width: 100% !important;
+    }
+  }
+}
+
+#projects {
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 844px) {
+
+    img {
+      width: 70%;
+      margin: 20px;
+    }
   }
 }
