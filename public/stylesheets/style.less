@@ -23,6 +23,27 @@ header {
   }
 }
 
+
+#main-offer {
+  height: 480px;
+  width: 100%;
+  background-size: 100% 480px;
+  background-image: url("/images/banner.webp");
+
+  @media screen and (max-width: @md-min) {
+    padding-top: 20px;
+    height: 300px;
+    background-size: 100% 300px;
+  }
+
+  @media screen and (max-width: @sm-min) {
+    height: 180px;
+    background-size: 100% 180px;
+  }
+
+  padding: 60px 0 0;
+}
+
 #contact {
 
   h2 {
