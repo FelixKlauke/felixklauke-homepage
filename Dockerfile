@@ -39,6 +39,14 @@ EXPOSE 3000
 HEALTHCHECK --interval=10s --timeout=10s --retries=3 \
     CMD curl -sS http://127.0.0.1:3000 || exit 1
 
+############
+### User ###
+############
+RUN id -u www-data &>/dev/null || useradd -ms /bin/bash www-data && \
+    chown www-data /opt/app -R
+
+USER www-data
+
 #####################
 ### Start the app ###
 #####################
