@@ -1,0 +1,25 @@
+###############
+### Version ###
+###############
+version: '3.7'
+
+################
+### Services ###
+################
+services:
+
+  ################
+  ### Homepage ###
+  ################
+  felixklauke-homepage:
+    image: gcr.io/klauke/felixklauke-homepage:latest
+    container_name: 'felixklauke-homepage'
+    networks:
+      - felixklauke
+    ports:
+      - 8080:3000
+
+
+networks:
+  felixklauke:
+    name: 'felixklauke'
