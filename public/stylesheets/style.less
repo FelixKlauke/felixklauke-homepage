@@ -19,6 +19,12 @@ header {
         border-radius: 50%;
         width: 80px;
       }
+
+      @media screen and (max-width: @sm-min) {
+        img {
+          margin-left: 20px;
+        }
+      }
     }
   }
 }
@@ -73,3 +79,28 @@ header {
   }
 }
 
+#projects {
+
+  background-color: whitesmoke;
+
+  p {
+    margin-top: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: @sm-min) {
+    img {
+      width: 80%;
+      display: block;
+      margin: 20px auto;
+    }
+  }
+}
+
+section {
+
+  padding: 40px 0;
+}
