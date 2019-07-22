@@ -33,6 +33,12 @@ COPY . .
 ##################################
 EXPOSE 3000
 
+###################
+### Healthcheck ###
+###################
+HEALTHCHECK --interval=10s --timeout=10s --retries=3 \
+    CMD curl -sS http://127.0.0.1:3000 || exit 1
+
 #####################
 ### Start the app ###
 #####################
