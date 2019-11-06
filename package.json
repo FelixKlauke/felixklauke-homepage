@@ -7,7 +7,7 @@
     "build": "docker build -t felixklauke/felixklauke-homepage ."
   },
   "dependencies": {
-    "@klauke-enterprises/antonia": "^2.1.0",
+    "@klauke-enterprises/antonia": "^3.0.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.16.0",
