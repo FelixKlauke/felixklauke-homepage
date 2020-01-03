@@ -7,15 +7,15 @@
     "build": "docker build -t felixklauke/felixklauke-homepage ."
   },
   "dependencies": {
-    "@klauke-enterprises/antonia": "^2.1.0",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "~4.16.0",
-    "helmet": "^3.16.0",
-    "http-errors": "~1.6.2",
-    "less": "^3.9.0",
+    "@klauke-enterprises/antonia": "^3.0.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~4.1.1",
+    "express": "~4.17.1",
+    "helmet": "^3.21.2",
+    "http-errors": "~1.7.3",
+    "less": "^3.10.3",
     "less-middleware": "^3.1.0",
     "morgan": "~1.9.0",
-    "twig": "~0.10.3"
+    "twig": "~1.14.0"
   }
 }
