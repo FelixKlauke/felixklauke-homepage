@@ -3,7 +3,10 @@
 @import (inline) "../../node_modules/@klauke-enterprises/antonia/dist/components/navigation.css";
 @import (inline) "../../node_modules/@klauke-enterprises/antonia/dist/components/footer.css";
 
+@import "vars.less";
 @import "../../node_modules/@klauke-enterprises/antonia/dist/util/vars.less";
+
+@import url("https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css");
 
 i {
   color: @color-white !important;
@@ -83,6 +86,32 @@ header {
   }
 }
 
+#whoami {
+  background-color: @color-smoke;
+}
+
+#blog-excerpts {
+
+  h1 {
+    text-align: center;
+    font-size-adjust: 2;
+  }
+
+  .blog-card {
+    padding: 20px 20px 40px;
+    margin: 20px;
+    background-color: @color-smoke;
+
+    h2 {
+      text-align: center;
+    }
+
+    p {
+      text-align: justify;
+    }
+  }
+}
+
 #projects {
 
   background-color: whitesmoke;
@@ -101,6 +130,16 @@ header {
       display: block;
       margin: 20px auto;
     }
+  }
+}
+
+#development {
+  h1 {
+    text-align: center;
+  }
+
+  .calendar {
+    margin: 40px 0;
   }
 }
 
